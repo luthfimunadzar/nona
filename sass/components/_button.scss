@@ -1,0 +1,52 @@
+// buttons
+
+.btn-primary{
+	background-color: $main;
+	color: $wt;
+	border: none;
+	padding: 8px 25px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	font-weight: bold;
+	text-transform: uppercase;
+	@include transition(all, 0.3s, ease);
+	&:hover, &:focus, &:active{
+		color: $wt !important;
+		background-color: lighten($main, 10%) !important;
+		outline: none;
+		box-shadow: none !important;
+	}
+}
+
+.btn-light{
+	background-color: $wt;
+	color: $main;
+	border: none;
+	padding: 11px 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	@include transition(all, 0.3s, ease);
+	&:hover, &:focus, &:active{
+		color: $t !important;
+		background-color: $wt !important;
+		outline: none;
+		box-shadow: none !important;
+	}
+}
+
+/*.btn-default{
+	background-color: $second;
+	color: $wt;
+	border: none;
+	padding: 8px 15px;
+	font-size: 14px;
+	font-family: $b;
+	@include transition(all, 0.3s, ease);
+	&:hover, &:focus, &:active{
+		color: $wt;
+		background-color: lighten($second, 10%);
+		box-shadow: none !important;
+	}
+}*/
